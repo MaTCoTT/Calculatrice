@@ -1,0 +1,59 @@
+.conteneur{
+    display: grid;
+    height: 90vh;
+    padding: 20px;
+    border-radius: 10px;
+    width: 1000px;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:repeat(6, 75px);
+    grid-template-areas: "T T T T"
+                         "AC AC DEL DEL"
+                         "un deux trois div"
+                         "quatre cinq six mult"
+                         "sept huit neuf moins"
+                         "point zero egale plus";
+                         
+  grid-gap: 10px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.display{
+    grid-area: T;
+    position: static;
+    color: white;
+    background-color: black;
+    font-size: 2rem;
+    text-align: right;
+    
+}
+
+.DEL {
+    grid-area: DEL;
+    font-size: 2rem;
+    background-color: red;
+    border: 2px solid black
+}
+.AC {
+    grid-area: AC;
+    font-size: 2rem;
+    background-color: red;
+    border: 2px solid black
+}
+
+.operator{
+    font-size: 2rem;
+    background-color: red;
+    border: 2px solid black
+}
+.number{
+    font-size: 2rem;
+    background-color: red;
+    border: 2px solid black
+}
+
